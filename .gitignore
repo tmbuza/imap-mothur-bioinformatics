@@ -15,8 +15,6 @@ code
 *leaflet*
 REFER
 data/*
-dags/dag.svg
-dags/dag.png
 resources/*
 results/*
 current_files.summary
