@@ -155,6 +155,8 @@ rule get_mothur_zymo_mock:
 	shell:
 		"bash {input.script}"
 
+
+
 # # Generating master OTU shared file.
 
 # # Making mothur-based sample mapping file.
@@ -428,3 +430,18 @@ rule get_mothur_zymo_mock:
 #         "../envs/mothur.yml"
 #     shell:
 #         "bash workflow/scripts/nmds_axes.sh"
+
+
+rule render_bs4_book:
+    input:
+        "index.Rmd",
+        expand('{outdir}/{sample}_{readNum}_001.fastq.gz', outdir=OUTDIR, sample=SAMPLES, readNum=config["readNum"]),
+        "data/metadata/test.files",
+		# "data/references/silva.v4.align",
+		# "data/references/trainset16_022016.pds.fasta",
+		# "data/references/trainset16_022016.pds.tax",
+		# "data/references/zymo.mock.16S.v4.fasta"
+    output:
+        "docs/index.html"
+    shell:
+        "R -e 'bookdown::render_book(input = \"index.Rmd\", output_format = \"bookdown::bs4_book\", output_dir = \"docs\")'"
