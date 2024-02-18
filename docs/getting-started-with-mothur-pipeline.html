@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>2 Getting started with Mothur pipeline | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<meta name="author" content="Teresia Mrema-Buza">
+<meta name="description" content="2.1 Create a mothur YAML file name: mothur48 channels:   - conda-forge   - bioconda   - defaults dependencies:   - mothur =1.48.0   - vsearch =2.22.1  2.2 Create mothur env using the YAML file...">
+<meta name="generator" content="bookdown 0.37 with bs4_book()">
+<meta property="og:title" content="2 Getting started with Mothur pipeline | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://tmbuza.github.io/imap-project-overview/getting-started-with-mothur-pipeline.html">
+<meta property="og:image" content="https://tmbuza.github.io/imap-project-overview/images/planning.png">
+<meta property="og:description" content="2.1 Create a mothur YAML file name: mothur48 channels:   - conda-forge   - bioconda   - defaults dependencies:   - mothur =1.48.0   - vsearch =2.22.1  2.2 Create mothur env using the YAML file...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2 Getting started with Mothur pipeline | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="2.1 Create a mothur YAML file name: mothur48 channels:   - conda-forge   - bioconda   - defaults dependencies:   - mothur =1.48.0   - vsearch =2.22.1  2.2 Create mothur env using the YAML file...">
+<meta name="twitter:image" content="https://tmbuza.github.io/imap-project-overview/images/planning.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Sen-0.4.8/font.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM%20Mono&amp;display=swap" rel="stylesheet">
+<link href="libs/Bitter-0.4.8/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="End-to-End Practical User Guides Using Integrated Approaches"><big>IMAP:</big> Integrated Microbiome Analysis Pipelines</a>:
+        <small class="text-muted">End-to-End Practical User Guides Using Integrated Approaches</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">IMAP-Part 05: Microbiome Bioinformatics Analysis with Mothur</a></li>
+<li class="book-part">MOTHUR PLATFORM</li>
+<li><a class="" href="microbiome-bioinformatics-with-mothur.html"><span class="header-section-number">1</span> Microbiome Bioinformatics with Mothur</a></li>
+<li class="book-part">GETTING STARTED</li>
+<li><a class="active" href="getting-started-with-mothur-pipeline.html"><span class="header-section-number">2</span> Getting started with Mothur pipeline</a></li>
+<li class="book-part">APPENDIX</li>
+<li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
+<li><a class="" href="mothur-bioinformatics-rulegraph.html"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li>
+<li><a class="" href="session-information.html"><span class="header-section-number">C</span> Session Information</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/tmbuza/imap-read-quality-control.git">View book source <i class="fas fa-air-freshener"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="getting-started-with-mothur-pipeline" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> Getting started with Mothur pipeline<a class="anchor" aria-label="anchor" href="#getting-started-with-mothur-pipeline"><i class="fas fa-link"></i></a>
+</h1>
+<div id="create-a-mothur-yaml-file" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Create a <code>mothur</code> YAML file<a class="anchor" aria-label="anchor" href="#create-a-mothur-yaml-file"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="getting-started-with-mothur-pipeline.html#cb1-1" tabindex="-1"></a><span class="ex">name:</span> mothur48</span>
+<span id="cb1-2"><a href="getting-started-with-mothur-pipeline.html#cb1-2" tabindex="-1"></a><span class="ex">channels:</span></span>
+<span id="cb1-3"><a href="getting-started-with-mothur-pipeline.html#cb1-3" tabindex="-1"></a>    <span class="ex">-</span> conda-forge</span>
+<span id="cb1-4"><a href="getting-started-with-mothur-pipeline.html#cb1-4" tabindex="-1"></a>    <span class="ex">-</span> bioconda</span>
+<span id="cb1-5"><a href="getting-started-with-mothur-pipeline.html#cb1-5" tabindex="-1"></a>    <span class="ex">-</span> defaults</span>
+<span id="cb1-6"><a href="getting-started-with-mothur-pipeline.html#cb1-6" tabindex="-1"></a><span class="ex">dependencies:</span></span>
+<span id="cb1-7"><a href="getting-started-with-mothur-pipeline.html#cb1-7" tabindex="-1"></a>    <span class="ex">-</span> mothur =1.48.0</span>
+<span id="cb1-8"><a href="getting-started-with-mothur-pipeline.html#cb1-8" tabindex="-1"></a>    <span class="ex">-</span> vsearch =2.22.1</span></code></pre></div>
+</div>
+<div id="create-mothur-env-using-the-yaml-file" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> Create <code>mothur</code> env using the YAML file<a class="anchor" aria-label="anchor" href="#create-mothur-env-using-the-yaml-file"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="getting-started-with-mothur-pipeline.html#cb2-1" tabindex="-1"></a><span class="ex">conda</span> activate base</span>
+<span id="cb2-2"><a href="getting-started-with-mothur-pipeline.html#cb2-2" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-n</span> mothur48 <span class="at">--file</span> mothur48.yml</span>
+<span id="cb2-3"><a href="getting-started-with-mothur-pipeline.html#cb2-3" tabindex="-1"></a><span class="ex">conda</span> activate mothur48 </span></code></pre></div>
+</div>
+<div id="download-references-databases" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Download references databases<a class="anchor" aria-label="anchor" href="#download-references-databases"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Download Silva alignment reference database.</li>
+<li>Creatge Silva classifier from Silva alignments.</li>
+<li>Download RDP classifier.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="getting-started-with-mothur-pipeline.html#cb3-1" tabindex="-1"></a><span class="fu">bash</span> workflow/scripts/mothurReferences.sh</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="overview-of-mothur-classification-methods" class="section level2" number="2.4">
+<h2>
+<span class="header-section-number">2.4</span> Overview of Mothur classification methods<a class="anchor" aria-label="anchor" href="#overview-of-mothur-classification-methods"><i class="fas fa-link"></i></a>
+</h2>
+<p>There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:</p>
+<div id="classify-otus" class="section level3" number="2.4.1">
+<h3>
+<span class="header-section-number">2.4.1</span> 1.Classify OTUs<a class="anchor" aria-label="anchor" href="#classify-otus"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>OTUs (Operational Taxonomic Units (OTUs)) are clusters of similar sequences and are commonly accepted as analytical units in microbial profiling when using 16S rRNA gene markers.</li>
+</ul>
+</div>
+<div id="classify-phylotypes" class="section level3" number="2.4.2">
+<h3>
+<span class="header-section-number">2.4.2</span> 2. Classify Phylotypes<a class="anchor" aria-label="anchor" href="#classify-phylotypes"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>A phylotype in microbiome research is a DNA sequence or group of sequences sharing more than an arbitrarily chosen level of similarity of a 16S rRNA gene marker.</li>
+</ul>
+</div>
+<div id="classify-asvs" class="section level3" number="2.4.3">
+<h3>
+<span class="header-section-number">2.4.3</span> 3. Classify ASVs<a class="anchor" aria-label="anchor" href="#classify-asvs"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>ASVs Amplicon Sequence Variants (ASVs)in microbiome research is any inferred single DNA sequences recovered from a bioinformatics analysis of 16S rRNA marker genes.</li>
+<li>ASV is typically really a cluster of sequences that are one or two bases apart from each other.</li>
+</ul>
+</div>
+<div id="classify-phylogenies" class="section level3" number="2.4.4">
+<h3>
+<span class="header-section-number">2.4.4</span> 4. Classify Phylogenies<a class="anchor" aria-label="anchor" href="#classify-phylogenies"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Microbial phylogenies are from gene sequence homologies. Models of mutation determine the most-likely evolutionary histories.</li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="preliminary-otu-analysis-using-mothur" class="section level2" number="2.5">
+<h2>
+<span class="header-section-number">2.5</span> Preliminary OTU analysis using <code>Mothur</code><a class="anchor" aria-label="anchor" href="#preliminary-otu-analysis-using-mothur"><i class="fas fa-link"></i></a>
+</h2>
+<p>The preliminary analysis (<code>alpha_beta_diversity rule</code>) is part of the bioinformatics analysis. It includes:</p>
+<ul>
+<li>Creating reads count for each group.</li>
+<li>Subsampling for downstream analysis.</li>
+<li>Rarefaction.</li>
+<li>Computing Alpha diversity metrics.</li>
+<li>Computing Beta diversity metrics.</li>
+<li>Getting sample distances.</li>
+<li>Constructing sample phylip tree.</li>
+<li>Generating ordination matrices including PCoA and NMDS.</li>
+</ul>
+</div>
+</div>
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="microbiome-bioinformatics-with-mothur.html"><span class="header-section-number">1</span> Microbiome Bioinformatics with Mothur</a></div>
+<div class="next"><a href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#getting-started-with-mothur-pipeline"><span class="header-section-number">2</span> Getting started with Mothur pipeline</a></li>
+<li><a class="nav-link" href="#create-a-mothur-yaml-file"><span class="header-section-number">2.1</span> Create a mothur YAML file</a></li>
+<li><a class="nav-link" href="#create-mothur-env-using-the-yaml-file"><span class="header-section-number">2.2</span> Create mothur env using the YAML file</a></li>
+<li><a class="nav-link" href="#download-references-databases"><span class="header-section-number">2.3</span> Download references databases</a></li>
+<li>
+<a class="nav-link" href="#overview-of-mothur-classification-methods"><span class="header-section-number">2.4</span> Overview of Mothur classification methods</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#classify-otus"><span class="header-section-number">2.4.1</span> 1.Classify OTUs</a></li>
+<li><a class="nav-link" href="#classify-phylotypes"><span class="header-section-number">2.4.2</span> 2. Classify Phylotypes</a></li>
+<li><a class="nav-link" href="#classify-asvs"><span class="header-section-number">2.4.3</span> 3. Classify ASVs</a></li>
+<li><a class="nav-link" href="#classify-phylogenies"><span class="header-section-number">2.4.4</span> 4. Classify Phylogenies</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#preliminary-otu-analysis-using-mothur"><span class="header-section-number">2.5</span> Preliminary OTU analysis using Mothur</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/tmbuza/imap-read-quality-control.git/blob/gh-pages/01_mothur_pipeline.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/tmbuza/imap-read-quality-control.git/edit/gh-pages/01_mothur_pipeline.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 mt-3">
+        <p><strong><u><a class="text-light" href="https://microbiome.complexdatainsights.com"><big>IMAP:</big> Integrated Microbiome Analysis Pipelines</a></u></strong>: End-to-End Practical User Guides Using Integrated Approaches</p>
+<br><p>Authored by Teresia Mrema-Buza, Last updated: <b>2024-02-18</b>.</p>
+<br>
+</div>
+      <div class="col-12 col-md-6 mt-3">
+        <p>Note: This practical guide was created using the <a class="text-light" href="https://bookdown.org/yihui/bookdown/">bookdown</a> R package, styled with the modern bs4_book format.</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>

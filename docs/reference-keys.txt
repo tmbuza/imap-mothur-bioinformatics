@@ -1,0 +1,14 @@
+microbiome-bioinformatics-with-mothur
+getting-started-with-mothur-pipeline
+create-a-mothur-yaml-file
+create-mothur-env-using-the-yaml-file
+download-references-databases
+overview-of-mothur-classification-methods
+classify-otus
+classify-phylotypes
+classify-asvs
+classify-phylogenies
+preliminary-otu-analysis-using-mothur
+imap-github-repos
+mothur-bioinformatics-rulegraph
+session-information
