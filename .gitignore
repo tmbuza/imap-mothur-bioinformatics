@@ -18,6 +18,7 @@ data/*
 resources/*
 results/*
 current_files.summary
+renv/
 
 # dags/*.
 images/*
