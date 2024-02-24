@@ -46,7 +46,7 @@ description: |
 
 <br>
 <br>
-![Book cover](images/16srrna.png)
+![](images/16srrna.png)
 <br>
 <br>
 
