@@ -2,7 +2,7 @@
 title: "<big>IMAP:</big> Integrated Microbiome Analysis Pipelines"
 subtitle: "End-to-End Practical User Guides Using Integrated Approaches"
 date:
-- <b>2024-02-18</b>
+- <b>2024-03-10</b>
 author: Teresia Mrema-Buza
 site: bookdown::bookdown_site
 documentclass: book
@@ -17,10 +17,10 @@ citation_package:
   - natbib
   - biblatex
   - amsplain
-url: https://tmbuza.github.io/imap-project-overview/
+url: https://tmbuza.github.io/imap-mothur-bioinformatics/
 cover-image: images/planning.png
 email_address: "ndelly@gmail.com"
-github-repo: tmbuza/imap-project-overview
+github-repo: tmbuza/imap-mothur-bioinformatics
 biblio-style: apalike
 description: |
   | This part will be added before release.
@@ -42,7 +42,7 @@ description: |
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
-# <u>IMAP-Part 05</u>: Microbiome Bioinformatics Analysis with Mothur {-}
+# <u>IMAP-Part 05</u>: Microbiome Bioinformatics Analysis with Mothur Pipelines {-#mothur-pipeline}
 
 <br>
 <br>
@@ -50,7 +50,6 @@ description: |
 <br>
 <br>
 
+## Bioinformatics journey with the Mothur pipeline {-}
+Welcome to the Practical User Guide for Microbiome Bioinformatics using the Mothur Pipeline! Discover the world of microbiome bioinformatics through hands-on exploration with the powerful Mothur pipeline. This guide equips you with practical skills to transform raw sequencing data into actionable insights. Whether you're an experienced researcher or new to the field, embark on a journey where bioinformatics meets real-world application, unraveling the intricate language of microbial communities.
 
-Welcome to the Practical User Guide for Microbiome Bioinformatics using the Mothur Pipeline!
-
-Discover the world of microbiome bioinformatics through hands-on exploration with the powerful Mothur pipeline. This guide equips you with practical skills to transform raw sequencing data into actionable insights. Whether you're an experienced researcher or new to the field, embark on a journey where bioinformatics meets real-world application, unraveling the intricate language of microbial communities.

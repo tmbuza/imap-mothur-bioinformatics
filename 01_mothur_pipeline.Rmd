@@ -1,5 +1,50 @@
-# (PART) GETTING STARTED {-}
-# Getting started with Mothur pipeline
+# (PART) MOTHUR BIOINFORMATICS {-}
+
+# Mothur Bioinformatics: Getting Started with the Pipeline
+
+## Tutorial References
+
+Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references:
+
+1. **Snakemake Workflow:** Explore the comprehensive [Snakemake workflow](https://github.com/wclose/mothurPipeline/tree/master) designed to run Mothur within a conda environment.
+
+2. **Full Mothur Tutorial:** Refer to the official [Mothur tutorial](https://mothur.org/wiki/miseq_sop/) for a detailed guide on utilizing Mothur in bioinformatics analysis.
+
+# Setting Up Mothur in a Conda Environment
+
+To streamline the Mothur pipeline, we've extracted and simplified key steps from the detailed tutorial available [here](https://github.com/wclose/mothurPipeline/tree/master). Follow these steps for a smooth start:
+
+1. **Clone the Snakemake Workflow:**
+   - Clone the Snakemake workflow repository to your local machine:
+     ```bash
+     git clone https://github.com/wclose/mothurPipeline.git
+     ```
+
+2. **Navigate to the Workflow Directory:**
+   - Change into the cloned directory:
+     ```bash
+     cd mothurPipeline
+     ```
+
+3. **Set Up Conda Environment:**
+   - Create a conda environment for Mothur:
+     ```bash
+     conda env create -f environment.yaml
+     ```
+
+4. **Activate Conda Environment:**
+   - Activate the conda environment:
+     ```bash
+     conda activate mothur
+     ```
+
+5. **Run the Snakemake Workflow:**
+   - Execute the Snakemake workflow to start the Mothur analysis:
+     ```bash
+     snakemake --use-conda
+     ```
+
+These steps provide a simplified entry point to using Mothur within a conda environment. For detailed explanations and additional features, refer to the [full Snakemake workflow](https://github.com/wclose/mothurPipeline/tree/master) repository.
 
 ## Create a `mothur` YAML file 
 
@@ -14,17 +59,20 @@ dependencies:
     - vsearch =2.22.1
 ```
 
-## Create `mothur` env using the YAML file
+## Create `mothur` environment using YAML File
 ```bash
 conda activate base
 conda env create -n mothur48 --file mothur48.yml
 conda activate mothur48 
 ```
 
-## Download references databases
+## Download References Databases
 - Download Silva alignment reference database.
-- Creatge Silva classifier from Silva alignments.
+- Optionally create Silva classifier from Silva alignments.
 - Download RDP classifier.
+- Get any other suitable classifier compatible with Mothur.
+
+The download script is in the repo, saved in the workflow/scripts directory. Run the following on command line or use the snakemake rules.
 
 ```bash
 bash workflow/scripts/mothurReferences.sh
@@ -32,25 +80,26 @@ bash workflow/scripts/mothurReferences.sh
 
 <br>
 
-## Overview of Mothur classification methods
+# (PART) MOTHUR CLASSIFICATION METHODS {-}
+# Overview of Mothur classification methods
 There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:
 
-### 1.Classify OTUs
+## Classify OTUs
 - OTUs (Operational Taxonomic Units (OTUs)) are clusters of similar sequences and are commonly accepted as analytical units in microbial profiling when using 16S rRNA gene markers.
 
-### 2. Classify Phylotypes
+## Classify Phylotypes
 - A phylotype in microbiome research is a DNA sequence or group of sequences sharing more than an arbitrarily chosen level of similarity of a 16S rRNA gene marker.
 
-### 3. Classify ASVs
+## Classify ASVs
 - ASVs Amplicon Sequence Variants (ASVs)in microbiome research is any inferred single DNA sequences recovered from a bioinformatics analysis of 16S rRNA marker genes.
 - ASV is typically really a cluster of sequences that are one or two bases apart from each other.
 
-### 4. Classify Phylogenies
+## Classify Phylogenies
 - Microbial phylogenies are from gene sequence homologies.  Models of mutation determine the most-likely evolutionary histories.
 
 <br>
 
-## Preliminary OTU analysis using `Mothur`
+# Preliminary OTU analysis using `Mothur`
 The preliminary analysis (`alpha_beta_diversity rule`) is part of the bioinformatics analysis. It includes:
 
 - Creating reads count for each group.
@@ -61,3 +110,56 @@ The preliminary analysis (`alpha_beta_diversity rule`) is part of the bioinforma
 - Getting sample distances.
 - Constructing sample phylip tree.
 - Generating ordination matrices including PCoA and NMDS.
+- More as needed...
+
+
+# (PART) ANALYSIS OF MOTHUR OUTPUT {-}
+
+# Exploring Mothur Output: OTU Table, Taxonomy, and Metadata
+
+Welcome to the next phase of our microbiome bioinformatics journey, where we dive into the analysis using Mothur's output. In this section, we'll explore key components, including the OTU table, Taxonomy information, and associated metadata.
+
+## Initial Data Exploration
+
+Before delving into the analysis, let's familiarize ourselves with the main outputs generated by Mothur:
+
+1. **OTU Table:** The Operational Taxonomic Unit (OTU) table represents the abundance of different microbial taxa across samples.
+
+2. **Taxonomy Data:** This provides information about the taxonomic classification of each OTU, helping us understand the microbial community composition.
+
+3. **Metadata:** Additional information associated with each sample, such as sample source, experimental conditions, or any other relevant details.
+
+## Starting the Analysis
+
+### Loading Data in R
+Begin by loading the OTU table, Taxonomy, and metadata into your R environment.
+
+In the example R code below, we use the `read_csv` function from the `readr` package to efficiently read CSV files.
+
+```R
+library(readr)
+
+# Example R code for loading data
+otu_table <- read_csv("path/to/otu_table.csv")
+taxonomy_data <- read_csv("path/to/taxonomy_data.csv")
+metadata <- read_csv("path/to/metadata.csv")
+
+```
+
+**Here's a breakdown of the key points**:
+
+- The read_csv function is used to read CSV files.
+- The read_csv function automatically detects the delimiter used in the CSV file.
+- Ensure the actual delimiter in your CSV files matches the default assumption (a comma). 
+
+
+# (PART) SERVICES AT HAND {-}
+
+# Consulting Services
+
+If at any point you find the analysis process overwhelming or time-consuming, remember that we offer consulting services to assist you. Our experienced team is ready to provide personalized guidance, troubleshoot issues, and ensure a smooth analysis experience. Whether you need help interpreting results or want to outsource the entire analysis, we are here to support your microbiome research journey.
+
+Explore our [Consulting Packages](https://complexdatainsights.com/consulting-package) for detailed information on our services.
+
+Feel free to contact us at [info@complexdatainsights.com] for more information on our consulting services.
+

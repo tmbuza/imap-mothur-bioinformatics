@@ -44,7 +44,7 @@ source("_common.R")
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
-# <u>IMAP-Part 05</u>: Microbiome Bioinformatics Analysis with Mothur {-}
+# <u>IMAP-Part 05</u>: Microbiome Bioinformatics Analysis with Mothur Pipelines {-#mothur-pipeline}
 
 <br>
 <br>
@@ -52,7 +52,6 @@ source("_common.R")
 <br>
 <br>
 
+## Bioinformatics journey with the Mothur pipeline {-}
+Welcome to the Practical User Guide for Microbiome Bioinformatics using the Mothur Pipeline! Discover the world of microbiome bioinformatics through hands-on exploration with the powerful Mothur pipeline. This guide equips you with practical skills to transform raw sequencing data into actionable insights. Whether you're an experienced researcher or new to the field, embark on a journey where bioinformatics meets real-world application, unraveling the intricate language of microbial communities.
 
-Welcome to the Practical User Guide for Microbiome Bioinformatics using the Mothur Pipeline!
-
-Discover the world of microbiome bioinformatics through hands-on exploration with the powerful Mothur pipeline. This guide equips you with practical skills to transform raw sequencing data into actionable insights. Whether you're an experienced researcher or new to the field, embark on a journey where bioinformatics meets real-world application, unraveling the intricate language of microbial communities.

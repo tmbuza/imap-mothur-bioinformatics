@@ -13,14 +13,13 @@ SAMPLES = list(set(glob_wildcards(os.path.join('data/reads', '{sample}_{readNum,
 rule FINAL_TARGET:
     input:
         "docs/index.html",
-
-        # "reports/snakemake_report.html",
-        # "reports/project_tree.txt",
-        # "dags/rulegraph.png",
-        # "dags/rulegraph.svg",   
-        # "config/pe_samples.tsv",
-        # "config/pe_units.tsv",
-        # "results/qc/seqkit1/seqkit_stats.txt", 
+        "reports/snakemake_report.html",
+        "reports/project_tree.txt",
+        "dags/rulegraph.png",
+        "dags/rulegraph.svg",   
+        "data/references/silva.v4.align",
+        "data/references/trainset16_022016.pds.fasta",
+        "data/references/trainset16_022016.pds.tax" 
 
         # expand("{outdir}/{sample}_{sraNum}.fastq.gz", outdir=OUTDIR, sample=SAMPLES, sraNum=config["sraNum"]),
         # "results/qc/seqkit1/seqkit_stats.txt",        
@@ -99,20 +98,10 @@ rule snakemake_report:
         "snakemake --keep-going --use-conda --report {output[0]}"
 
 
-rule render_bs4_book:
-    input:
-        "index.Rmd",
-        expand('{outdir}/{sample}_{readNum}_001.fastq.gz', outdir=OUTDIR, sample=SAMPLES, readNum=config["readNum"]),
-        "data/metadata/test.files",
-		# "data/references/silva.v4.align",
-		# "data/references/trainset16_022016.pds.fasta",
-		# "data/references/trainset16_022016.pds.tax",
-		# "data/references/zymo.mock.16S.v4.fasta"
-    output:
-        "docs/index.html"
-    shell:
-        "R -e 'bookdown::render_book(input = \"index.Rmd\", output_format = \"bookdown::bs4_book\", output_dir = \"docs\")'"
-
+#####################################
+#####################################
+#####################################
+#####################################
 
 rule import_fastq_reads:
     output:
@@ -445,3 +434,4 @@ rule render_bs4_book:
         "docs/index.html"
     shell:
         "R -e 'bookdown::render_book(input = \"index.Rmd\", output_format = \"bookdown::bs4_book\", output_dir = \"docs\")'"
+

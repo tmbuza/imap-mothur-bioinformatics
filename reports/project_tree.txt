@@ -1,0 +1,120 @@
+Project Tree
+.
+├── 00-preface.Rmd
+├── 01_mothur_pipeline.Rmd
+├── 99-appendix.Rmd
+├── 999-references.Rmd
+├── 9999-footer.Rmd
+├── LICENSE.md
+├── README.md
+├── _bookdown.yml
+├── _common.R
+├── _output.yml
+├── bs4_template.html
+├── config
+│   ├── config.yml
+│   ├── samples.tsv
+│   └── units.tsv
+├── dags
+│   ├── rulegraph.png
+│   └── rulegraph.svg
+├── data
+│   ├── assembled
+│   ├── logs
+│   ├── metadata
+│   ├── reads
+│   └── references
+├── docs
+│   ├── 00-preface.md
+│   ├── 01_mothur_pipeline.md
+│   ├── 404.html
+│   ├── 99-appendix.md
+│   ├── 999-references.md
+│   ├── 9999-footer.md
+│   ├── appendix.html
+│   ├── bioinformatics-steps-with-mothur-pipeline.html
+│   ├── consulting-services.html
+│   ├── dags
+│   ├── exploring-mothur-output-otu-table-taxonomy-and-metadata.html
+│   ├── getting-started-with-mothur-pipeline.html
+│   ├── images
+│   ├── imap-github-repos.html
+│   ├── index.html
+│   ├── index.md
+│   ├── libs
+│   ├── microbiome-bioinformatics-with-mothur.html
+│   ├── mothur-bioinformatics-getting-started-with-the-pipeline.html
+│   ├── mothur-bioinformatics-rulegraph.html
+│   ├── overview-of-mothur-classification-methods.html
+│   ├── preliminary-otu-analysis-using-mothur.html
+│   ├── reference-keys.txt
+│   ├── references-1.html
+│   ├── references.html
+│   ├── sample-metadata-rulegraph.html
+│   ├── search.json
+│   ├── section.html
+│   ├── session-information.html
+│   ├── setting-up-mothur-in-a-conda-environment.html
+│   └── style.css
+├── files.tsv
+├── images
+│   ├── 16srrna.png
+│   ├── bioinformatics.png
+│   ├── bkgd.png
+│   ├── imap_part02.svg
+│   ├── imap_part03.svg
+│   ├── imap_part04.svg
+│   ├── imap_part05.svg
+│   ├── silvaalign.png
+│   ├── smkreport
+│   └── sra_config_cache.png
+├── imap-mothur-bioinformatics.Rproj
+├── index.Rmd
+├── library
+│   ├── apa.csl
+│   ├── export.bib
+│   ├── imap.bib
+│   ├── packages.bib
+│   └── references.bib
+├── mothur-analysis.rds
+├── mothur_process
+│   ├── asv_analysis
+│   ├── current_files.summary
+│   ├── error_analysis
+│   ├── final.count_table
+│   ├── final.fasta
+│   ├── final.taxonomy
+│   ├── final_files.logfile
+│   ├── intermediate
+│   ├── logs
+│   ├── otu_analysis
+│   ├── phylogeny_analysis
+│   ├── phylotype_analysis
+│   ├── test.files
+│   ├── test.filter
+│   └── test.scrap.contigs.fasta
+├── output
+├── renv
+│   ├── activate.R
+│   ├── library
+│   ├── settings.json
+│   └── staging
+├── renv.lock
+├── report.html
+├── reports
+│   └── project_tree.txt
+├── resources
+│   ├── metadata
+│   ├── references
+│   ├── session_info.txt
+│   └── test
+├── session_info.txt
+├── style.css
+└── workflow
+    ├── Snakefile
+    ├── envs
+    ├── report
+    ├── rules
+    └── scripts
+
+38 directories, 79 files

@@ -2,7 +2,7 @@
 
 set -ev
 
-mkdir -p dags
-
-snakemake -F --rulegraph | dot -Tsvg > dags/rulegraph.svg
-snakemake -F --rulegraph | dot -Tpng > dags/rulegraph.png
+snakemake --unlock;
+mkdir -p {output[0]};
+snakemake --rulegraph | dot -Tpng > {output[1]};
+snakemake --rulegraph | dot -Tsvg > {output[2]};

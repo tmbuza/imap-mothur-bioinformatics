@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>B Mothur Bioinformatics Rulegraph | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>4 Overview of Mothur classification methods | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
-<meta name="description" content="This part will be added before release.">
+<meta name="description" content="There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:  4.1 Classify OTUs OTUs (Operational Taxonomic Units (OTUs)) are...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="B Mothur Bioinformatics Rulegraph | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="4 Overview of Mothur classification methods | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/mothur-bioinformatics-rulegraph.html">
+<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/overview-of-mothur-classification-methods.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
-<meta property="og:description" content="This part will be added before release.">
+<meta property="og:description" content="There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:  4.1 Classify OTUs OTUs (Operational Taxonomic Units (OTUs)) are...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="B Mothur Bioinformatics Rulegraph | IMAP: Integrated Microbiome Analysis Pipelines">
-<meta name="twitter:description" content="This part will be added before release.">
+<meta name="twitter:title" content="4 Overview of Mothur classification methods | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:  4.1 Classify OTUs OTUs (Operational Taxonomic Units (OTUs)) are...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
 <li><a class="" href="mothur-bioinformatics-getting-started-with-the-pipeline.html"><span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline</a></li>
 <li><a class="" href="setting-up-mothur-in-a-conda-environment.html"><span class="header-section-number">3</span> Setting Up Mothur in a Conda Environment</a></li>
 <li class="book-part">MOTHUR CLASSIFICATION METHODS</li>
-<li><a class="" href="overview-of-mothur-classification-methods.html"><span class="header-section-number">4</span> Overview of Mothur classification methods</a></li>
+<li><a class="active" href="overview-of-mothur-classification-methods.html"><span class="header-section-number">4</span> Overview of Mothur classification methods</a></li>
 <li><a class="" href="preliminary-otu-analysis-using-mothur.html"><span class="header-section-number">5</span> Preliminary OTU analysis using Mothur</a></li>
 <li class="book-part">ANALYSIS OF MOTHUR OUTPUT</li>
 <li><a class="" href="exploring-mothur-output-otu-table-taxonomy-and-metadata.html"><span class="header-section-number">6</span> Exploring Mothur Output: OTU Table, Taxonomy, and Metadata</a></li>
@@ -65,7 +65,7 @@
 <li><a class="" href="consulting-services.html"><span class="header-section-number">7</span> Consulting Services</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
-<li><a class="active" href="mothur-bioinformatics-rulegraph.html"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li>
+<li><a class="" href="mothur-bioinformatics-rulegraph.html"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li>
 <li><a class="" href="session-information.html"><span class="header-section-number">C</span> Session Information</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
@@ -75,23 +75,63 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mothur-bioinformatics-rulegraph" class="section level1" number="9">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="overview-of-mothur-classification-methods" class="section level1" number="4">
 <h1>
-<span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph<a class="anchor" aria-label="anchor" href="#mothur-bioinformatics-rulegraph"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4</span> Overview of Mothur classification methods<a class="anchor" aria-label="anchor" href="#overview-of-mothur-classification-methods"><i class="fas fa-link"></i></a>
 </h1>
-<div class="inline-figure"><img src="dags/rulegraph.svg"></div>
+<p>There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:</p>
+<div id="classify-otus" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Classify OTUs<a class="anchor" aria-label="anchor" href="#classify-otus"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>OTUs (Operational Taxonomic Units (OTUs)) are clusters of similar sequences and are commonly accepted as analytical units in microbial profiling when using 16S rRNA gene markers.</li>
+</ul>
+</div>
+<div id="classify-phylotypes" class="section level2" number="4.2">
+<h2>
+<span class="header-section-number">4.2</span> Classify Phylotypes<a class="anchor" aria-label="anchor" href="#classify-phylotypes"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>A phylotype in microbiome research is a DNA sequence or group of sequences sharing more than an arbitrarily chosen level of similarity of a 16S rRNA gene marker.</li>
+</ul>
+</div>
+<div id="classify-asvs" class="section level2" number="4.3">
+<h2>
+<span class="header-section-number">4.3</span> Classify ASVs<a class="anchor" aria-label="anchor" href="#classify-asvs"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>ASVs Amplicon Sequence Variants (ASVs)in microbiome research is any inferred single DNA sequences recovered from a bioinformatics analysis of 16S rRNA marker genes.</li>
+<li>ASV is typically really a cluster of sequences that are one or two bases apart from each other.</li>
+</ul>
+</div>
+<div id="classify-phylogenies" class="section level2" number="4.4">
+<h2>
+<span class="header-section-number">4.4</span> Classify Phylogenies<a class="anchor" aria-label="anchor" href="#classify-phylogenies"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Microbial phylogenies are from gene sequence homologies. Models of mutation determine the most-likely evolutionary histories.</li>
+</ul>
+<p><br></p>
+</div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></div>
-<div class="next"><a href="session-information.html"><span class="header-section-number">C</span> Session Information</a></div>
+<div class="prev"><a href="setting-up-mothur-in-a-conda-environment.html"><span class="header-section-number">3</span> Setting Up Mothur in a Conda Environment</a></div>
+<div class="next"><a href="preliminary-otu-analysis-using-mothur.html"><span class="header-section-number">5</span> Preliminary OTU analysis using Mothur</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#mothur-bioinformatics-rulegraph"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#overview-of-mothur-classification-methods"><span class="header-section-number">4</span> Overview of Mothur classification methods</a></li>
+<li><a class="nav-link" href="#classify-otus"><span class="header-section-number">4.1</span> Classify OTUs</a></li>
+<li><a class="nav-link" href="#classify-phylotypes"><span class="header-section-number">4.2</span> Classify Phylotypes</a></li>
+<li><a class="nav-link" href="#classify-asvs"><span class="header-section-number">4.3</span> Classify ASVs</a></li>
+<li><a class="nav-link" href="#classify-phylogenies"><span class="header-section-number">4.4</span> Classify Phylogenies</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/blob/gh-pages/99-appendix.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/edit/gh-pages/99-appendix.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
+<li><a id="book-source" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/blob/gh-pages/01_mothur_pipeline.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/edit/gh-pages/01_mothur_pipeline.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
         </ul>
 </div>
     </nav>

@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>B Mothur Bioinformatics Rulegraph | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>2 Mothur Bioinformatics: Getting Started with the Pipeline | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
-<meta name="description" content="This part will be added before release.">
+<meta name="description" content="2.1 Tutorial References Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references: Snakemake Workflow: Explore the...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="B Mothur Bioinformatics Rulegraph | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="2 Mothur Bioinformatics: Getting Started with the Pipeline | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/mothur-bioinformatics-rulegraph.html">
+<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/mothur-bioinformatics-getting-started-with-the-pipeline.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
-<meta property="og:description" content="This part will be added before release.">
+<meta property="og:description" content="2.1 Tutorial References Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references: Snakemake Workflow: Explore the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="B Mothur Bioinformatics Rulegraph | IMAP: Integrated Microbiome Analysis Pipelines">
-<meta name="twitter:description" content="This part will be added before release.">
+<meta name="twitter:title" content="2 Mothur Bioinformatics: Getting Started with the Pipeline | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="2.1 Tutorial References Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references: Snakemake Workflow: Explore the...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 <li class="book-part">MOTHUR STEPS</li>
 <li><a class="" href="bioinformatics-steps-with-mothur-pipeline.html"><span class="header-section-number">1</span> Bioinformatics Steps with Mothur Pipeline</a></li>
 <li class="book-part">MOTHUR BIOINFORMATICS</li>
-<li><a class="" href="mothur-bioinformatics-getting-started-with-the-pipeline.html"><span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline</a></li>
+<li><a class="active" href="mothur-bioinformatics-getting-started-with-the-pipeline.html"><span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline</a></li>
 <li><a class="" href="setting-up-mothur-in-a-conda-environment.html"><span class="header-section-number">3</span> Setting Up Mothur in a Conda Environment</a></li>
 <li class="book-part">MOTHUR CLASSIFICATION METHODS</li>
 <li><a class="" href="overview-of-mothur-classification-methods.html"><span class="header-section-number">4</span> Overview of Mothur classification methods</a></li>
@@ -65,7 +65,7 @@
 <li><a class="" href="consulting-services.html"><span class="header-section-number">7</span> Consulting Services</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
-<li><a class="active" href="mothur-bioinformatics-rulegraph.html"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li>
+<li><a class="" href="mothur-bioinformatics-rulegraph.html"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li>
 <li><a class="" href="session-information.html"><span class="header-section-number">C</span> Session Information</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
@@ -75,23 +75,35 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mothur-bioinformatics-rulegraph" class="section level1" number="9">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mothur-bioinformatics-getting-started-with-the-pipeline" class="section level1" number="2">
 <h1>
-<span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph<a class="anchor" aria-label="anchor" href="#mothur-bioinformatics-rulegraph"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline<a class="anchor" aria-label="anchor" href="#mothur-bioinformatics-getting-started-with-the-pipeline"><i class="fas fa-link"></i></a>
 </h1>
-<div class="inline-figure"><img src="dags/rulegraph.svg"></div>
+<div id="tutorial-references" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Tutorial References<a class="anchor" aria-label="anchor" href="#tutorial-references"><i class="fas fa-link"></i></a>
+</h2>
+<p>Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Snakemake Workflow:</strong> Explore the comprehensive <a href="https://github.com/wclose/mothurPipeline/tree/master">Snakemake workflow</a> designed to run Mothur within a conda environment.</p></li>
+<li><p><strong>Full Mothur Tutorial:</strong> Refer to the official <a href="https://mothur.org/wiki/miseq_sop/">Mothur tutorial</a> for a detailed guide on utilizing Mothur in bioinformatics analysis.</p></li>
+</ol>
+</div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></div>
-<div class="next"><a href="session-information.html"><span class="header-section-number">C</span> Session Information</a></div>
+<div class="prev"><a href="bioinformatics-steps-with-mothur-pipeline.html"><span class="header-section-number">1</span> Bioinformatics Steps with Mothur Pipeline</a></div>
+<div class="next"><a href="setting-up-mothur-in-a-conda-environment.html"><span class="header-section-number">3</span> Setting Up Mothur in a Conda Environment</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#mothur-bioinformatics-rulegraph"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#mothur-bioinformatics-getting-started-with-the-pipeline"><span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline</a></li>
+<li><a class="nav-link" href="#tutorial-references"><span class="header-section-number">2.1</span> Tutorial References</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/blob/gh-pages/99-appendix.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/edit/gh-pages/99-appendix.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
+<li><a id="book-source" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/blob/gh-pages/01_mothur_pipeline.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/edit/gh-pages/01_mothur_pipeline.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
         </ul>
 </div>
     </nav>
