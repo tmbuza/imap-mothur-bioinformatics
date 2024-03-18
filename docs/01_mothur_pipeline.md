@@ -1,26 +1,29 @@
 # (PART) MOTHUR BIOINFORMATICS {-}
 
-# Mothur Bioinformatics: Getting Started with the Pipeline
+# Mothur Microbial Profiling
 
 ## Tutorial References
 
 Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references:
 
-1. **Snakemake Workflow:** Explore the comprehensive [Snakemake workflow](https://github.com/wclose/mothurPipeline/tree/master) designed to run Mothur within a conda environment.
+1. **Snakemake Workflow:** Explore the comprehensive [Snakemake workflow](https://github.com/wclose/mothurPipeline/tree/master) designed to run Mothur within a conda environment. So far, we have found this repository to be a great demo for maintaining reproducibility using Snakemake workflow, making it a good starting point. However, users are encouraged to explore more elsewhere to see if there is a better alternative.
 
 2. **Full Mothur Tutorial:** Refer to the official [Mothur tutorial](https://mothur.org/wiki/miseq_sop/) for a detailed guide on utilizing Mothur in bioinformatics analysis.
 
-# Setting Up Mothur in a Conda Environment
+## Setting Up Mothur in a Conda Environment
 
 To streamline the Mothur pipeline, we've extracted and simplified key steps from the detailed tutorial available [here](https://github.com/wclose/mothurPipeline/tree/master). Follow these steps for a smooth start:
 
-1. **Clone the Snakemake Workflow:**
-   - Clone the Snakemake workflow repository to your local machine:
-     ```bash
-     git clone https://github.com/wclose/mothurPipeline.git
-     ```
+### Clone the Snakemake Workflow
 
-2. **Navigate to the Workflow Directory:**
+Clone the Snakemake workflow repository to your local machine:
+
+```bash
+git clone https://github.com/wclose/mothurPipeline.git
+
+```
+
+## Navigate to the Workflow Directory:**
    - Change into the cloned directory:
      ```bash
      cd mothurPipeline
@@ -80,7 +83,7 @@ bash workflow/scripts/mothurReferences.sh
 
 <br>
 
-# (PART) MOTHUR CLASSIFICATION METHODS {-}
+# (PART) CLASSIFICATION METHODS {-}
 # Overview of Mothur classification methods
 There are four methods that can be used to profile microbial communities present in a sample. Here we briefly decribe each method:
 
@@ -113,9 +116,9 @@ The preliminary analysis (`alpha_beta_diversity rule`) is part of the bioinforma
 - More as needed...
 
 
-# (PART) ANALYSIS OF MOTHUR OUTPUT {-}
+# (PART) EXPLORE OUTPUT {-}
 
-# Exploring Mothur Output: OTU Table, Taxonomy, and Metadata
+# Exploring Mothur Output: OTU Table, Taxonomy, and Metadata {#mothur-output}
 
 Welcome to the next phase of our microbiome bioinformatics journey, where we dive into the analysis using Mothur's output. In this section, we'll explore key components, including the OTU table, Taxonomy information, and associated metadata.
 
@@ -130,8 +133,6 @@ Before delving into the analysis, let's familiarize ourselves with the main outp
 3. **Metadata:** Additional information associated with each sample, such as sample source, experimental conditions, or any other relevant details.
 
 ## Starting the Analysis
-
-### Loading Data in R
 Begin by loading the OTU table, Taxonomy, and metadata into your R environment.
 
 In the example R code below, we use the `read_csv` function from the `readr` package to efficiently read CSV files.

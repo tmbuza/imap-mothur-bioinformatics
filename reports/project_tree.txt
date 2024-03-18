@@ -1,120 +1,124 @@
 Project Tree
-.
-├── 00-preface.Rmd
-├── 01_mothur_pipeline.Rmd
-├── 99-appendix.Rmd
-├── 999-references.Rmd
-├── 9999-footer.Rmd
-├── LICENSE.md
-├── README.md
-├── _bookdown.yml
-├── _common.R
-├── _output.yml
-├── bs4_template.html
-├── config
-│   ├── config.yml
-│   ├── samples.tsv
-│   └── units.tsv
-├── dags
-│   ├── rulegraph.png
-│   └── rulegraph.svg
-├── data
-│   ├── assembled
-│   ├── logs
-│   ├── metadata
-│   ├── reads
-│   └── references
-├── docs
-│   ├── 00-preface.md
-│   ├── 01_mothur_pipeline.md
-│   ├── 404.html
-│   ├── 99-appendix.md
-│   ├── 999-references.md
-│   ├── 9999-footer.md
-│   ├── appendix.html
-│   ├── bioinformatics-steps-with-mothur-pipeline.html
-│   ├── consulting-services.html
-│   ├── dags
-│   ├── exploring-mothur-output-otu-table-taxonomy-and-metadata.html
-│   ├── getting-started-with-mothur-pipeline.html
-│   ├── images
-│   ├── imap-github-repos.html
-│   ├── index.html
-│   ├── index.md
-│   ├── libs
-│   ├── microbiome-bioinformatics-with-mothur.html
-│   ├── mothur-bioinformatics-getting-started-with-the-pipeline.html
-│   ├── mothur-bioinformatics-rulegraph.html
-│   ├── overview-of-mothur-classification-methods.html
-│   ├── preliminary-otu-analysis-using-mothur.html
-│   ├── reference-keys.txt
-│   ├── references-1.html
-│   ├── references.html
-│   ├── sample-metadata-rulegraph.html
-│   ├── search.json
-│   ├── section.html
-│   ├── session-information.html
-│   ├── setting-up-mothur-in-a-conda-environment.html
-│   └── style.css
-├── files.tsv
-├── images
-│   ├── 16srrna.png
-│   ├── bioinformatics.png
-│   ├── bkgd.png
-│   ├── imap_part02.svg
-│   ├── imap_part03.svg
-│   ├── imap_part04.svg
-│   ├── imap_part05.svg
-│   ├── silvaalign.png
-│   ├── smkreport
-│   └── sra_config_cache.png
-├── imap-mothur-bioinformatics.Rproj
-├── index.Rmd
-├── library
-│   ├── apa.csl
-│   ├── export.bib
-│   ├── imap.bib
-│   ├── packages.bib
-│   └── references.bib
-├── mothur-analysis.rds
-├── mothur_process
-│   ├── asv_analysis
-│   ├── current_files.summary
-│   ├── error_analysis
-│   ├── final.count_table
-│   ├── final.fasta
-│   ├── final.taxonomy
-│   ├── final_files.logfile
-│   ├── intermediate
-│   ├── logs
-│   ├── otu_analysis
-│   ├── phylogeny_analysis
-│   ├── phylotype_analysis
-│   ├── test.files
-│   ├── test.filter
-│   └── test.scrap.contigs.fasta
-├── output
-├── renv
-│   ├── activate.R
-│   ├── library
-│   ├── settings.json
-│   └── staging
-├── renv.lock
-├── report.html
-├── reports
-│   └── project_tree.txt
-├── resources
-│   ├── metadata
-│   ├── references
-│   ├── session_info.txt
-│   └── test
-├── session_info.txt
-├── style.css
-└── workflow
-    ├── Snakefile
-    ├── envs
-    ├── report
-    ├── rules
-    └── scripts
+[01;34m.[0m
+├── [00m00-preface.Rmd[0m
+├── [00m01_mothur_pipeline.Rmd[0m
+├── [00m99-appendix.Rmd[0m
+├── [00m999-references.Rmd[0m
+├── [00m9999-footer.Rmd[0m
+├── [01;32mLICENSE.md[0m
+├── [00mREADME.md[0m
+├── [00m_bookdown.yml[0m
+├── [00m_common.R[0m
+├── [00m_output.yml[0m
+├── [00mbook.html[0m
+├── [00mbs4_template.html[0m
+├── [01;34mconfig[0m
+│   ├── [00mconfig.yml[0m
+│   ├── [00msamples.tsv[0m
+│   └── [00munits.tsv[0m
+├── [01;34mdags[0m
+│   ├── [00mrulegraph.png[0m
+│   └── [00mrulegraph.svg[0m
+├── [01;34mdata[0m
+│   ├── [01;34massembled[0m
+│   ├── [01;34mlogs[0m
+│   ├── [01;34mmetadata[0m
+│   ├── [01;34mreads[0m
+│   └── [01;34mreferences[0m
+├── [01;34mdocs[0m
+│   ├── [00m00-preface.md[0m
+│   ├── [00m01_mothur_pipeline.md[0m
+│   ├── [00m404.html[0m
+│   ├── [00m99-appendix.md[0m
+│   ├── [00m999-references.md[0m
+│   ├── [00m9999-footer.md[0m
+│   ├── [00mappendix.html[0m
+│   ├── [00mbioinformatics-steps-with-mothur-pipeline.html[0m
+│   ├── [00mconsulting-services.html[0m
+│   ├── [01;34mdags[0m
+│   ├── [00mexploring-mothur-output-otu-table-taxonomy-and-metadata.html[0m
+│   ├── [00mgetting-started-with-mothur-pipeline.html[0m
+│   ├── [01;34mimages[0m
+│   ├── [00mimap-github-repos.html[0m
+│   ├── [00mindex.html[0m
+│   ├── [00mindex.md[0m
+│   ├── [01;34mlibs[0m
+│   ├── [00mmicrobiome-bioinformatics-with-mothur.html[0m
+│   ├── [00mmothur-bioinformatics-getting-started-with-the-pipeline.html[0m
+│   ├── [00mmothur-bioinformatics-rulegraph.html[0m
+│   ├── [00mmothur-microbial-profiling.html[0m
+│   ├── [00mmothur-output.html[0m
+│   ├── [00moverview-of-mothur-classification-methods.html[0m
+│   ├── [00moverview-of-mothur-pipeline-steps.html[0m
+│   ├── [00mpreliminary-otu-analysis-using-mothur.html[0m
+│   ├── [00mreference-keys.txt[0m
+│   ├── [00mreferences-1.html[0m
+│   ├── [00mreferences.html[0m
+│   ├── [00msample-metadata-rulegraph.html[0m
+│   ├── [00msearch.json[0m
+│   ├── [00msection.html[0m
+│   ├── [00msession-information.html[0m
+│   ├── [00msetting-up-mothur-in-a-conda-environment.html[0m
+│   └── [00mstyle.css[0m
+├── [00mfiles.tsv[0m
+├── [01;34mimages[0m
+│   ├── [00m16srrna.png[0m
+│   ├── [00mbioinformatics.png[0m
+│   ├── [00mbkgd.png[0m
+│   ├── [00mcoders.png[0m
+│   ├── [00mimap_part02.svg[0m
+│   ├── [00mimap_part03.svg[0m
+│   ├── [00mimap_part04.svg[0m
+│   ├── [00mimap_part05.svg[0m
+│   ├── [00msilvaalign.png[0m
+│   └── [01;34msmkreport[0m
+├── [00mimap-mothur-bioinformatics.Rproj[0m
+├── [01;32mindex.Rmd[0m
+├── [01;34mlibrary[0m
+│   ├── [00mapa.csl[0m
+│   ├── [00mexport.bib[0m
+│   ├── [00mimap.bib[0m
+│   ├── [00mpackages.bib[0m
+│   └── [00mreferences.bib[0m
+├── [00mmothur-analysis.rds[0m
+├── [01;34mmothur_process[0m
+│   ├── [01;34masv_analysis[0m
+│   ├── [00mcurrent_files.summary[0m
+│   ├── [01;34merror_analysis[0m
+│   ├── [00mfinal.count_table[0m
+│   ├── [00mfinal.fasta[0m
+│   ├── [00mfinal.taxonomy[0m
+│   ├── [00mfinal_files.logfile[0m
+│   ├── [01;34mintermediate[0m
+│   ├── [01;34mlogs[0m
+│   ├── [01;34motu_analysis[0m
+│   ├── [01;34mphylogeny_analysis[0m
+│   ├── [01;34mphylotype_analysis[0m
+│   ├── [00mtest.files[0m
+│   ├── [00mtest.filter[0m
+│   └── [00mtest.scrap.contigs.fasta[0m
+├── [01;34moutput[0m
+├── [01;34mrenv[0m
+│   ├── [00mactivate.R[0m
+│   ├── [01;34mlibrary[0m
+│   ├── [00msettings.json[0m
+│   └── [01;34mstaging[0m
+├── [00mrenv.lock[0m
+├── [00mreport.html[0m
+├── [01;34mreports[0m
+│   ├── [00mproject_tree.txt[0m
+│   └── [00msnakemake_report.html[0m
+├── [01;34mresources[0m
+│   ├── [01;34mmetadata[0m
+│   ├── [01;34mreferences[0m
+│   └── [01;34mtest[0m
+├── [00msession_info.txt[0m
+├── [00mstyle.css[0m
+└── [01;34mworkflow[0m
+    ├── [00mSnakefile[0m
+    ├── [01;34menvs[0m
+    ├── [01;34mreport[0m
+    ├── [01;34mrules[0m
+    └── [01;34mscripts[0m
 
-38 directories, 79 files
+38 directories, 83 files

@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>6 Consulting Services | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>1 Overview of Mothur Pipeline Steps | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
-<meta name="description" content="If at any point you find the analysis process overwhelming or time-consuming, remember that we offer consulting services to assist you. Our experienced team is ready to provide personalized...">
+<meta name="description" content="1.1 Data Preprocessing  Input Data: Understand the required format and structure of your sequencing data. Quality Control: Perform initial quality checks to filter out low-quality sequences.  1.2...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="6 Consulting Services | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="1 Overview of Mothur Pipeline Steps | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/consulting-services.html">
+<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/overview-of-mothur-pipeline-steps.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
-<meta property="og:description" content="If at any point you find the analysis process overwhelming or time-consuming, remember that we offer consulting services to assist you. Our experienced team is ready to provide personalized...">
+<meta property="og:description" content="1.1 Data Preprocessing  Input Data: Understand the required format and structure of your sequencing data. Quality Control: Perform initial quality checks to filter out low-quality sequences.  1.2...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="6 Consulting Services | IMAP: Integrated Microbiome Analysis Pipelines">
-<meta name="twitter:description" content="If at any point you find the analysis process overwhelming or time-consuming, remember that we offer consulting services to assist you. Our experienced team is ready to provide personalized...">
+<meta name="twitter:title" content="1 Overview of Mothur Pipeline Steps | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="1.1 Data Preprocessing  Input Data: Understand the required format and structure of your sequencing data. Quality Control: Perform initial quality checks to filter out low-quality sequences.  1.2...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">IMAP-Part 05: Microbiome Bioinformatics Analysis with Mothur Pipelines</a></li>
 <li class="book-part">MOTHUR OVERVIEW</li>
-<li><a class="" href="overview-of-mothur-pipeline-steps.html"><span class="header-section-number">1</span> Overview of Mothur Pipeline Steps</a></li>
+<li><a class="active" href="overview-of-mothur-pipeline-steps.html"><span class="header-section-number">1</span> Overview of Mothur Pipeline Steps</a></li>
 <li class="book-part">MOTHUR BIOINFORMATICS</li>
 <li><a class="" href="mothur-microbial-profiling.html"><span class="header-section-number">2</span> Mothur Microbial Profiling</a></li>
 <li class="book-part">CLASSIFICATION METHODS</li>
@@ -61,7 +61,7 @@
 <li class="book-part">EXPLORE OUTPUT</li>
 <li><a class="" href="mothur-output.html"><span class="header-section-number">5</span> Exploring Mothur Output: OTU Table, Taxonomy, and Metadata</a></li>
 <li class="book-part">SERVICES AT HAND</li>
-<li><a class="active" href="consulting-services.html"><span class="header-section-number">6</span> Consulting Services</a></li>
+<li><a class="" href="consulting-services.html"><span class="header-section-number">6</span> Consulting Services</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
 <li><a class="" href="mothur-bioinformatics-rulegraph.html"><span class="header-section-number">B</span> Mothur Bioinformatics Rulegraph</a></li>
@@ -74,29 +74,97 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="consulting-services" class="section level1" number="6">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="overview-of-mothur-pipeline-steps" class="section level1" number="1">
 <h1>
-<span class="header-section-number">6</span> Consulting Services<a class="anchor" aria-label="anchor" href="#consulting-services"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1</span> Overview of Mothur Pipeline Steps<a class="anchor" aria-label="anchor" href="#overview-of-mothur-pipeline-steps"><i class="fas fa-link"></i></a>
 </h1>
-<p>If at any point you find the analysis process overwhelming or time-consuming, remember that we offer consulting services to assist you. Our experienced team is ready to provide personalized guidance, troubleshoot issues, and ensure a smooth analysis experience. Whether you need help interpreting results or want to outsource the entire analysis, we are here to support your microbiome research journey.</p>
-<p>Explore our <a href="https://complexdatainsights.com/consulting-package">Consulting Packages</a> for detailed information on our services.</p>
-<p>Feel free to contact us at [<a href="mailto:info@complexdatainsights.com" class="email">info@complexdatainsights.com</a>] for more information on our consulting services.</p>
-
+<div id="data-preprocessing" class="section level2" number="1.1">
+<h2>
+<span class="header-section-number">1.1</span> Data Preprocessing<a class="anchor" aria-label="anchor" href="#data-preprocessing"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Input Data:</strong> Understand the required format and structure of your sequencing data.</li>
+<li>
+<strong>Quality Control:</strong> Perform initial quality checks to filter out low-quality sequences.</li>
+</ul>
+</div>
+<div id="sequence-alignment" class="section level2" number="1.2">
+<h2>
+<span class="header-section-number">1.2</span> Sequence Alignment<a class="anchor" aria-label="anchor" href="#sequence-alignment"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Alignment Process:</strong> Align sequences to a reference database for further analysis.</li>
+<li>
+<strong>Reference Databases:</strong> Explore available reference databases for alignment.</li>
+</ul>
+</div>
+<div id="taxonomic-classification" class="section level2" number="1.3">
+<h2>
+<span class="header-section-number">1.3</span> Taxonomic Classification<a class="anchor" aria-label="anchor" href="#taxonomic-classification"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Assign Taxonomy:</strong> Identify the taxonomic origin of each sequence.</li>
+</ul>
+</div>
+<div id="diversity-analysis" class="section level2" number="1.4">
+<h2>
+<span class="header-section-number">1.4</span> Diversity Analysis<a class="anchor" aria-label="anchor" href="#diversity-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Alpha Diversity:</strong> Assess diversity within individual samples.</li>
+<li>
+<strong>Beta Diversity:</strong> Explore diversity between different samples.</li>
+</ul>
+</div>
+<div id="statistical-analysis" class="section level2" number="1.5">
+<h2>
+<span class="header-section-number">1.5</span> Statistical Analysis<a class="anchor" aria-label="anchor" href="#statistical-analysis"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Hypothesis Testing:</strong> Apply statistical tests to identify significant differences.</li>
+<li>
+<strong>Visualization:</strong> Create visualizations to interpret the results effectively.</li>
+</ul>
+</div>
+<div id="interpretation-and-reporting" class="section level2" number="1.6">
+<h2>
+<span class="header-section-number">1.6</span> Interpretation and Reporting<a class="anchor" aria-label="anchor" href="#interpretation-and-reporting"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Biological Insights:</strong> Derive meaningful biological interpretations from your analysis.</li>
+<li>
+<strong>Report Generation:</strong> Communicate your findings through reports or visualizations.</li>
+</ul>
+</div>
 </div>
 
 
 
   <div class="chapter-nav">
-<div class="prev"><a href="mothur-output.html"><span class="header-section-number">5</span> Exploring Mothur Output: OTU Table, Taxonomy, and Metadata</a></div>
-<div class="next"><a href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></div>
+<div class="prev"><a href="index.html">IMAP-Part 05: Microbiome Bioinformatics Analysis with Mothur Pipelines</a></div>
+<div class="next"><a href="mothur-microbial-profiling.html"><span class="header-section-number">2</span> Mothur Microbial Profiling</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#consulting-services"><span class="header-section-number">6</span> Consulting Services</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#overview-of-mothur-pipeline-steps"><span class="header-section-number">1</span> Overview of Mothur Pipeline Steps</a></li>
+<li><a class="nav-link" href="#data-preprocessing"><span class="header-section-number">1.1</span> Data Preprocessing</a></li>
+<li><a class="nav-link" href="#sequence-alignment"><span class="header-section-number">1.2</span> Sequence Alignment</a></li>
+<li><a class="nav-link" href="#taxonomic-classification"><span class="header-section-number">1.3</span> Taxonomic Classification</a></li>
+<li><a class="nav-link" href="#diversity-analysis"><span class="header-section-number">1.4</span> Diversity Analysis</a></li>
+<li><a class="nav-link" href="#statistical-analysis"><span class="header-section-number">1.5</span> Statistical Analysis</a></li>
+<li><a class="nav-link" href="#interpretation-and-reporting"><span class="header-section-number">1.6</span> Interpretation and Reporting</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/blob/gh-pages/01_mothur_pipeline.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/edit/gh-pages/01_mothur_pipeline.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
+<li><a id="book-source" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/blob/gh-pages/00-preface.Rmd">View source <i class="fas fa-air-freshener"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/tmbuza/imap-mothur-bioinformatics.git/edit/gh-pages/00-preface.Rmd">Edit this page <i class="fas fa-air-freshener"></i></a></li>
         </ul>
 </div>
     </nav>

@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>2 Mothur Bioinformatics: Getting Started with the Pipeline | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>2 Mothur Microbial Profiling | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
 <meta name="description" content="2.1 Tutorial References Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references: Snakemake Workflow: Explore the...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="2 Mothur Bioinformatics: Getting Started with the Pipeline | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="2 Mothur Microbial Profiling | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/mothur-bioinformatics-getting-started-with-the-pipeline.html">
+<meta property="og:url" content="https://tmbuza.github.io/imap-mothur-bioinformatics/mothur-microbial-profiling.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
 <meta property="og:description" content="2.1 Tutorial References Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references: Snakemake Workflow: Explore the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2 Mothur Bioinformatics: Getting Started with the Pipeline | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:title" content="2 Mothur Microbial Profiling | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta name="twitter:description" content="2.1 Tutorial References Before diving into the Mothur bioinformatics pipeline, make sure to familiarize yourself with the following essential references: Snakemake Workflow: Explore the...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-mothur-bioinformatics/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,15 +51,15 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">IMAP-Part 05: Microbiome Bioinformatics Analysis with Mothur Pipelines</a></li>
-<li class="book-part">MOTHUR STEPS</li>
+<li class="book-part">MOTHUR OVERVIEW</li>
 <li><a class="" href="overview-of-mothur-pipeline-steps.html"><span class="header-section-number">1</span> Overview of Mothur Pipeline Steps</a></li>
 <li class="book-part">MOTHUR BIOINFORMATICS</li>
-<li><a class="active" href="mothur-bioinformatics-getting-started-with-the-pipeline.html"><span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline</a></li>
+<li><a class="active" href="mothur-microbial-profiling.html"><span class="header-section-number">2</span> Mothur Microbial Profiling</a></li>
 <li class="book-part">CLASSIFICATION METHODS</li>
 <li><a class="" href="overview-of-mothur-classification-methods.html"><span class="header-section-number">3</span> Overview of Mothur classification methods</a></li>
 <li><a class="" href="preliminary-otu-analysis-using-mothur.html"><span class="header-section-number">4</span> Preliminary OTU analysis using Mothur</a></li>
 <li class="book-part">EXPLORE OUTPUT</li>
-<li><a class="" href="exploring-mothur-output-otu-table-taxonomy-and-metadata.html"><span class="header-section-number">5</span> Exploring Mothur Output: OTU Table, Taxonomy, and Metadata</a></li>
+<li><a class="" href="mothur-output.html"><span class="header-section-number">5</span> Exploring Mothur Output: OTU Table, Taxonomy, and Metadata</a></li>
 <li class="book-part">SERVICES AT HAND</li>
 <li><a class="" href="consulting-services.html"><span class="header-section-number">6</span> Consulting Services</a></li>
 <li class="book-part">APPENDIX</li>
@@ -74,9 +74,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mothur-bioinformatics-getting-started-with-the-pipeline" class="section level1" number="2">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mothur-microbial-profiling" class="section level1" number="2">
 <h1>
-<span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline<a class="anchor" aria-label="anchor" href="#mothur-bioinformatics-getting-started-with-the-pipeline"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2</span> Mothur Microbial Profiling<a class="anchor" aria-label="anchor" href="#mothur-microbial-profiling"><i class="fas fa-link"></i></a>
 </h1>
 <div id="tutorial-references" class="section level2" number="2.1">
 <h2>
@@ -98,7 +98,7 @@
 <span class="header-section-number">2.2.1</span> Clone the Snakemake Workflow<a class="anchor" aria-label="anchor" href="#clone-the-snakemake-workflow"><i class="fas fa-link"></i></a>
 </h3>
 <p>Clone the Snakemake workflow repository to your local machine:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/wclose/mothurPipeline.git</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="mothur-microbial-profiling.html#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/wclose/mothurPipeline.git</span></code></pre></div>
 </div>
 </div>
 <div id="navigate-to-the-workflow-directory" class="section level2" number="2.3">
@@ -116,7 +116,7 @@
 <ul>
 <li>
 <p>Create a conda environment for Mothur:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb2-1" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yaml</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="mothur-microbial-profiling.html#cb2-1" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yaml</span></code></pre></div>
 </li>
 </ul>
 </li>
@@ -125,7 +125,7 @@
 <ul>
 <li>
 <p>Activate the conda environment:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb3-1" tabindex="-1"></a><span class="ex">conda</span> activate mothur</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="mothur-microbial-profiling.html#cb3-1" tabindex="-1"></a><span class="ex">conda</span> activate mothur</span></code></pre></div>
 </li>
 </ul>
 </li>
@@ -134,7 +134,7 @@
 <ul>
 <li>
 <p>Execute the Snakemake workflow to start the Mothur analysis:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb4-1" tabindex="-1"></a><span class="ex">snakemake</span> <span class="at">--use-conda</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="mothur-microbial-profiling.html#cb4-1" tabindex="-1"></a><span class="ex">snakemake</span> <span class="at">--use-conda</span></span></code></pre></div>
 </li>
 </ul>
 </li>
@@ -145,22 +145,22 @@
 <h2>
 <span class="header-section-number">2.4</span> Create a <code>mothur</code> YAML file<a class="anchor" aria-label="anchor" href="#create-a-mothur-yaml-file"><i class="fas fa-link"></i></a>
 </h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-1" tabindex="-1"></a><span class="ex">name:</span> mothur48</span>
-<span id="cb5-2"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-2" tabindex="-1"></a><span class="ex">channels:</span></span>
-<span id="cb5-3"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-3" tabindex="-1"></a>    <span class="ex">-</span> conda-forge</span>
-<span id="cb5-4"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-4" tabindex="-1"></a>    <span class="ex">-</span> bioconda</span>
-<span id="cb5-5"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-5" tabindex="-1"></a>    <span class="ex">-</span> defaults</span>
-<span id="cb5-6"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-6" tabindex="-1"></a><span class="ex">dependencies:</span></span>
-<span id="cb5-7"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-7" tabindex="-1"></a>    <span class="ex">-</span> mothur =1.48.0</span>
-<span id="cb5-8"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb5-8" tabindex="-1"></a>    <span class="ex">-</span> vsearch =2.22.1</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="mothur-microbial-profiling.html#cb5-1" tabindex="-1"></a><span class="ex">name:</span> mothur48</span>
+<span id="cb5-2"><a href="mothur-microbial-profiling.html#cb5-2" tabindex="-1"></a><span class="ex">channels:</span></span>
+<span id="cb5-3"><a href="mothur-microbial-profiling.html#cb5-3" tabindex="-1"></a>    <span class="ex">-</span> conda-forge</span>
+<span id="cb5-4"><a href="mothur-microbial-profiling.html#cb5-4" tabindex="-1"></a>    <span class="ex">-</span> bioconda</span>
+<span id="cb5-5"><a href="mothur-microbial-profiling.html#cb5-5" tabindex="-1"></a>    <span class="ex">-</span> defaults</span>
+<span id="cb5-6"><a href="mothur-microbial-profiling.html#cb5-6" tabindex="-1"></a><span class="ex">dependencies:</span></span>
+<span id="cb5-7"><a href="mothur-microbial-profiling.html#cb5-7" tabindex="-1"></a>    <span class="ex">-</span> mothur =1.48.0</span>
+<span id="cb5-8"><a href="mothur-microbial-profiling.html#cb5-8" tabindex="-1"></a>    <span class="ex">-</span> vsearch =2.22.1</span></code></pre></div>
 </div>
 <div id="create-mothur-environment-using-yaml-file" class="section level2" number="2.5">
 <h2>
 <span class="header-section-number">2.5</span> Create <code>mothur</code> environment using YAML File<a class="anchor" aria-label="anchor" href="#create-mothur-environment-using-yaml-file"><i class="fas fa-link"></i></a>
 </h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb6-1" tabindex="-1"></a><span class="ex">conda</span> activate base</span>
-<span id="cb6-2"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb6-2" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-n</span> mothur48 <span class="at">--file</span> mothur48.yml</span>
-<span id="cb6-3"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb6-3" tabindex="-1"></a><span class="ex">conda</span> activate mothur48 </span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="mothur-microbial-profiling.html#cb6-1" tabindex="-1"></a><span class="ex">conda</span> activate base</span>
+<span id="cb6-2"><a href="mothur-microbial-profiling.html#cb6-2" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-n</span> mothur48 <span class="at">--file</span> mothur48.yml</span>
+<span id="cb6-3"><a href="mothur-microbial-profiling.html#cb6-3" tabindex="-1"></a><span class="ex">conda</span> activate mothur48 </span></code></pre></div>
 </div>
 <div id="download-references-databases" class="section level2" number="2.6">
 <h2>
@@ -173,7 +173,7 @@
 <li>Get any other suitable classifier compatible with Mothur.</li>
 </ul>
 <p>The download script is in the repo, saved in the workflow/scripts directory. Run the following on command line or use the snakemake rules.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="mothur-bioinformatics-getting-started-with-the-pipeline.html#cb7-1" tabindex="-1"></a><span class="fu">bash</span> workflow/scripts/mothurReferences.sh</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="mothur-microbial-profiling.html#cb7-1" tabindex="-1"></a><span class="fu">bash</span> workflow/scripts/mothurReferences.sh</span></code></pre></div>
 <p><br></p>
 </div>
 </div>
@@ -186,7 +186,7 @@
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#mothur-bioinformatics-getting-started-with-the-pipeline"><span class="header-section-number">2</span> Mothur Bioinformatics: Getting Started with the Pipeline</a></li>
+<li><a class="nav-link" href="#mothur-microbial-profiling"><span class="header-section-number">2</span> Mothur Microbial Profiling</a></li>
 <li><a class="nav-link" href="#tutorial-references"><span class="header-section-number">2.1</span> Tutorial References</a></li>
 <li>
 <a class="nav-link" href="#setting-up-mothur-in-a-conda-environment"><span class="header-section-number">2.2</span> Setting Up Mothur in a Conda Environment</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#clone-the-snakemake-workflow"><span class="header-section-number">2.2.1</span> Clone the Snakemake Workflow</a></li></ul>
