@@ -12,11 +12,8 @@ Before diving into the Mothur bioinformatics pipeline, make sure to familiarize 
 
 ## Setting Up Mothur in a Conda Environment
 
-To streamline the Mothur pipeline, we've extracted and simplified key steps from the detailed tutorial available [here](https://github.com/wclose/mothurPipeline/tree/master). Follow these steps for a smooth start:
-
 ### Clone the Snakemake Workflow
-
-Clone the Snakemake workflow repository to your local machine:
+I strongly suggest using a repository that offers a comprehensive guide on how to integrate Mothur workflows using Snakemake. To access this incredibly helpful resource, I recommend cloning the Snakemake workflow repository onto your computer. The repository presents a detailed explanation of each step involved in the process, ensuring a smooth implementation of Mothur within the Snakemake framework.
 
 ```bash
 git clone https://github.com/wclose/mothurPipeline.git
