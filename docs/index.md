@@ -2,7 +2,7 @@
 title: "<big>IMAP:</big> Integrated Microbiome Analysis Pipelines"
 subtitle: "End-to-End Practical User Guides Using Integrated Approaches"
 date:
-- <b>2024-03-22</b>
+- <b>2024-04-24</b>
 author: Teresia Mrema-Buza
 site: bookdown::bookdown_site
 documentclass: book
@@ -50,7 +50,7 @@ description: |
 <br>
 <br>
 
-## Bioinformatics journey with the Mothur pipeline {-}
+## Welcome to IMAP chapter 05: Mothur Bioinformatics Pipeline {-}
 Welcome to the Practical User Guide for Microbiome Bioinformatics using the Mothur Pipeline! Discover the world of microbiome bioinformatics through hands-on exploration with the powerful Mothur pipeline. This guide equips you with practical skills to transform raw sequencing data into actionable insights. Whether you're an experienced researcher or new to the field, embark on a journey where bioinformatics meets real-world application, unraveling the intricate language of microbial communities.
 
 
