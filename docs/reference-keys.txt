@@ -24,5 +24,4 @@ initial-data-exploration
 starting-the-analysis
 consulting-services
 imap-github-repos
-mothur-bioinformatics-rulegraph
 session-information
